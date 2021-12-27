@@ -19,32 +19,25 @@
       }
 
       body {
-        /* max-width: 1000px; */
-        /* margin: 0 auto; */
         font-family: 'Neucha', cursive;
         position: absolute;
         color: rgb(34, 34, 34);
+        display: flex;
+        flex-direction: column;
       }
       
       main {
-        height: 100vh;
-        /* position: relative; */
-        /* bottom: 0; */
+        flex: 1 1 100vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        
         align-content: flex-end;
       }
       
       img {
         width: 100vw;
         z-index: -1;
-        /* position: relative;
-        bottom: 0;
-        left: 0;
-        display: inline-block; */
-        /* transform: translate(-50%, -50%) */
+
       }
       
       
@@ -100,12 +93,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        /* gap: 1.5rem; */
-      }
-
-      script {
-        padding: 0;
-        margin: 0;
       }
 
 
@@ -114,7 +101,6 @@
   </head>
   <body>
     <main>
-      <div></div>
       <img class="img-top" src="phils-cards-xmas2021.png" alt="Cartoon christmas figures">
       <div class="container">
         <div class="text">
