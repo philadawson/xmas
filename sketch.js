@@ -1,13 +1,18 @@
 let snowflakes = []; // array to hold snowflake objects
 let canvas;
 
-setTimeout(() => {
-  resizeCanvas(windowWidth, windowHeight);
-}, 100);
+/* known issue on mobile - canvas does not resize when rotating from landscape to portrait
+} */
 
 /* function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 } */
+
+function windowResized() {
+  setTimeout(() => {
+    resizeCanvas(windowWidth, windowHeight);
+  }, 100);
+}
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
