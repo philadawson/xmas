@@ -1,9 +1,13 @@
 let snowflakes = []; // array to hold snowflake objects
 let canvas;
 
-function windowResized() {
+setTimeout(() => {
   resizeCanvas(windowWidth, windowHeight);
-}
+}, 100);
+
+/* function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+} */
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
